@@ -1,7 +1,8 @@
 // src/components/navigation/AdminSidebar.tsx
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Logo from '../common/Logo.tsx';
+import Logo from './Logo';
+
 
 const adminNavItems = [
   { name: 'Tổng quan', path: '/admin', icon: '🏠' },
@@ -11,7 +12,7 @@ const adminNavItems = [
   { name: 'Người dùng', path: '/admin/users', icon: '👥' },
 ];
 
-const AdminSidebar: React.FC = () => {
+const Sidebar: React.FC = () => {
   return (
     <div className="w-64 flex flex-col bg-gray-800 text-white h-full fixed top-0 left-0 z-20">
       {/* Logo/Tiêu đề Dashboard */}
@@ -48,4 +49,4 @@ const AdminSidebar: React.FC = () => {
   );
 };
 
-export default AdminSidebar;
+export default Sidebar;
