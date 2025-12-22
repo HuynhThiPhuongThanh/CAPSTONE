@@ -1,7 +1,7 @@
 // src/components/AuthRoute.tsx
 import React, { ReactElement } from 'react';
 import { Navigate, Outlet } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext.tsx'; // Giả định AuthContext đã tạo
+
 
 interface AuthRouteProps {
   // Yêu cầu quyền admin?

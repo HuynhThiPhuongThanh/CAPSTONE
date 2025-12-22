@@ -5,14 +5,11 @@ import Button from './common/Button.tsx';
 
 const Hero: React.FC = () => {
   return (
-    <div 
+    <div
       className="relative bg-cover bg-center h-[60vh] flex items-center justify-start rounded-xl shadow-lg"
-      style={{ backgroundImage: 'url(/assets/hero-banner.jpg)' }} 
-      // 
-
-[Image of modern nordic style living room]
-
+      style={{ backgroundImage: 'url(/assets/hero-banner.jpg)' }}
     >
+      {/* Image of modern nordic style living room */}
       <div className="absolute inset-0 bg-black opacity-30 rounded-xl"></div>
       
       <div className="relative text-white p-8 md:p-12 max-w-lg ml-0 md:ml-12">
