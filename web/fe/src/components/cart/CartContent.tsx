@@ -1,10 +1,11 @@
 // src/components/cart/CartContent.tsx
 import React from 'react';
 import { useCart } from '../../context/CartContext.tsx';
-import CartItem from './CartItem.tsx'; // Component hiển thị từng mục
-import CartTotal from './CartTotal.tsx'; // Component tính tổng
-import Button from '../common/Button.tsx';
+
 import { Link } from 'react-router-dom';
+import Button from '../Button.tsx';
+import CartItem from './CartItem.tsx';
+import CartTotal from './CartTotal.tsx';
 
 const CartContent: React.FC = () => {
   const { cartItems, clearCart } = useCart();
@@ -51,7 +52,7 @@ const CartContent: React.FC = () => {
       
       {/* Cột 3: Tổng Cộng và Checkout */}
       <div className="lg:col-span-1">
-        <CartTotal />
+        <CartTotal/>
         <Link to="/checkout">
           <Button variant="primary" className="w-full mt-4 py-3 text-lg">
             Tiến hành Thanh toán
